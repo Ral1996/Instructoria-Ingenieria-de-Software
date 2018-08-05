@@ -5,6 +5,10 @@
     POR: BACH. RAÚL MAURICIO PORTILLO.
 
     "UTILIZANDO ES5 - (ECMA SCRIPT 5)"
+    
+    Información: En el caso de trabajar con JavaScript(JS), no podremos utilizar Interface u Implements, ya que como tal,
+    JS no lo soporta, y en el caso de este patrón en específico, no será necesario recrear ciertas Abstracciones ya que
+    estas son implementaciones vacías.
 
     Interectuadores:
         Los objetos que participan en este patrón son: 
