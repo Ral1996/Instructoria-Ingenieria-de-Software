@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abstract Factory</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+     .imgPatron
+     {
+         left: 35%;
+     }
+    </style>
+</head>
+<body>
+    <div class="container"><br>
+        <div class="dataUES col-md-12">
+            <div class="alert alert-info">
+                <p class="text-center"><strong>UNIVERSIDAD DE EL SALVADOR</strong></p>
+                <p class="text-center"><strong>DEPARTAMENTO DE INGENIERÍA Y ARQUITECTURA</strong></p>
+                <p class="text-center"><strong>INGENIERÍA DE SOFTWARE</strong></p>
+            </div>
+        </div>
+                
+        <div class="textPatron col-md-12">
+            <p class="text-justify">
+                    Abstract Factory (Fábrica Abstracta) es un patrón de diseño para el desarrollo de software. 
+                    El problema que intenta solucionar este patrón es el de crear diferentes familias de objetos.
+                    El patrón Abstract Factory está aconsejado cuando se prevé la inclusión de nuevas familias de
+                    productos, pero puede resultar contraproducente cuando se añaden nuevos productos o cambian los 
+                    existentes, puesto que afectaría a todas las familias creadas. 
+            </p>
+            <!-- Botones para el ver el ejemplo del patrón, información de la WIKI y además datos del repositorio. -->
+            <button type="button" class="btn btn-outline-primary col-sm-6" onclick="ejecutarAF(); return false">Probar patrón</button>
+            <a type="button" class="btn btn-outline-success col-sm-3" href="https://www.dofactory.com/javascript/abstract-factory-design-pattern">Información Wiki</a>
+            <a type="button" class="btn btn-outline-dark col-sm-2" href="https://github.com/Ral1996/Instructoria-Ingenieria-de-Software">GitHub</a>
+        </div>
+        <div class="imgPatron col-md-4"> <!-- Contenedor de la imagen, que describe el PATRÓN ABSTRACT FACTORY -->
+            <img src="img/javascript-abstract-factory.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="alert alert-danger col-sm-12"> <!-- Alerta sencilla. -->
+            By Raúl Portillo - 2018.
+        </div>
+        
+    </div>
+
+<!-- Archivos JS-BOOSTRAP. -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/sweetalert2.all.js"></script><!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script type="text/javascript" src="Abstract Factory.js"></script> <!-- Link del archivo que contiene el patrón. -->
+</body>
+</html>
