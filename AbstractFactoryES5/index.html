@@ -14,6 +14,10 @@
      {
          left: 35%;
      }
+     .btn_group
+     {
+         margin-left: 8%;
+     }
     </style>
 </head>
 <body>
@@ -34,14 +38,16 @@
                     productos, pero puede resultar contraproducente cuando se añaden nuevos productos o cambian los 
                     existentes, puesto que afectaría a todas las familias creadas. 
             </p>
-            <!-- Botones para el ver el ejemplo del patrón, información de la WIKI y además datos del repositorio. -->
-            <button type="button" class="btn btn-outline-primary col-sm-6" onclick="ejecutarAF(); return false">Probar patrón</button>
-            <a type="button" class="btn btn-outline-success col-sm-3" href="https://www.dofactory.com/javascript/abstract-factory-design-pattern">Información Wiki</a>
-            <a type="button" class="btn btn-outline-dark col-sm-2" href="https://github.com/Ral1996/Instructoria-Ingenieria-de-Software">GitHub</a>
-        </div>
+            <div class="btn_group">
+                <!-- Botones para el ver el ejemplo del patrón, información de la WIKI y además datos del repositorio. -->
+                <button type="button" class="btn btn-outline-primary col-sm-6" onclick="ejecutarAF(); return false">Probar patrón</button>
+                <a type="button" class="btn btn-outline-success col-sm-3" href="https://www.dofactory.com/javascript/abstract-factory-design-pattern">Información Wiki</a>
+                <a type="button" class="btn btn-outline-dark col-sm-2" href="https://github.com/Ral1996/Instructoria-Ingenieria-de-Software">GitHub</a>
+            </div>
+        </div><br>
         <div class="imgPatron col-md-4"> <!-- Contenedor de la imagen, que describe el PATRÓN ABSTRACT FACTORY -->
             <img src="img/javascript-abstract-factory.jpg" alt="" class="img-fluid">
-        </div>
+        </div><br>
         <div class="alert alert-danger col-sm-12"> <!-- Alerta sencilla. -->
             By Raúl Portillo - 2018.
         </div>
@@ -53,6 +59,6 @@
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/sweetalert2.all.js"></script><!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-<script type="text/javascript" src="Abstract Factory.js"></script> <!-- Link del archivo que contiene el patrón. -->
+<script type="text/javascript" src="AbstractFactory.js"></script> <!-- Link del archivo que contiene el patrón. -->
 </body>
 </html>
