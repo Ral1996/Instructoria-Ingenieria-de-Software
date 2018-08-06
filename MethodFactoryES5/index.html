@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Factory Method</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+     .imgPatron
+     {
+         left: 35%;
+     }
+     .btn_group
+     {
+         margin-left: 8%;
+     }
+    </style>
+</head>
+<body>
+    <div class="container"><br>
+        <div class="dataUES col-md-12">
+            <div class="alert alert-info">
+                <p class="text-center"><strong>UNIVERSIDAD DE EL SALVADOR</strong></p>
+                <p class="text-center"><strong>DEPARTAMENTO DE INGENIERÍA Y ARQUITECTURA</strong></p>
+                <p class="text-center"><strong>INGENIERÍA DE SOFTWARE</strong></p>
+            </div>
+        </div>
+                
+        <div class="textPatron col-md-12">
+            <h3 class="text-center">Pattern Factory Method</h3>
+            <p class="text-justify">
+                En diseño de software, el patrón de diseño Factory Method consiste en utilizar una clase constructora 
+                (al estilo del Abstract Factory) abstracta con unos cuantos métodos definidos y otro(s) abstracto(s): 
+                el dedicado a la construcción de objetos de un subtipo de un tipo determinado. Es una simplificación 
+                del Abstract Factory, en la que la clase abstracta tiene métodos concretos que usan algunos de los abstractos;
+                según usemos una u otra hija de esta clase abstracta, tendremos uno u otro comportamiento.  
+            </p>
+            <div class="btn_group">
+                <!-- Botones para el ver el ejemplo del patrón, información de la WIKI y además datos del repositorio. -->
+                <button type="button" class="btn btn-outline-primary col-sm-6" onclick="ejecutarMF(); return false">Probar patrón</button>
+                <a type="button" class="btn btn-outline-success col-sm-3" href="http://michelletorres.mx/patron-de-diseno-factory/">Información Wiki</a>
+                <a type="button" class="btn btn-outline-dark col-sm-2" href="https://github.com/Ral1996/Instructoria-Ingenieria-de-Software">GitHub</a>
+            </div>
+            
+        </div><br>
+        <div class="imgPatron col-md-4"> <!-- Contenedor de la imagen, que describe el PATRÓN ABSTRACT FACTORY -->
+            <img src="img/FactoryMethod.png" alt="" class="img-fluid">
+        </div><br>
+        <div class="alert alert-danger col-sm-12"> <!-- Alerta sencilla. -->
+            By Raúl Portillo - 2018.
+        </div>
+        
+    </div>
+
+<!-- Archivos JS-BOOSTRAP. -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/sweetalert2.all.js"></script><!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script type="text/javascript" src="MethodFactory.js"></script> <!-- Link del archivo que contiene el patrón. -->
+</body>
+</html>
