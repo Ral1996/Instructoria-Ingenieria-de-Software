@@ -1,0 +1,29 @@
+/*
+
+MATERIA: INGENIERÍA DE SOFTWARE.
+DOCENTE: ING. MILAGRO ALICIA DE REYES.
+INSTRUCTOR: BACH. RAÚL MAURICIO PORTILLO MUÑOZ.
+
+
+    INTRODUCCIÓN A POO (PROGRAMACIÓN ORIENTADA A OBJETOS).
+                ESTANDAR ES6 (ECMA SCRIPT 6).
+
+*/
+
+// EN ESTE APARTADO HAREMOS USO DE CLASES Y OBJETOS SENCILLOS.
+
+// DECLARAMOS LA CLASE ESTUDIANTE
+class estudiante             
+{
+    constructor(nombre)         // CREAMOS EL CONSTRUCTOR, QUE RECIBE EL PARAMETRO DE NOMBRE.
+    {
+        this.nombre = nombre;   // DENTRO DEL CONSTRUCTOR, CAPTAMOS EL STRING DEL NOMBRE DEL ESTUDIANTE, DICIENDO QUE NOMBRE = NOMBRE.
+    }
+    mostrarNombre()             // MÉTODO ENCARGADO DE IMPRIMIR EN LA CONSOLA EL NOMBRE DEL ESTUDIANTE Y CONCATENAR EL STRING.
+    {
+        console.log(this.nombre + ", es estudiane de la Carrera de Ingeniería de Sistemas Informáticos.");
+    }
+}
+// CREAMOS UN NUEVO OBJETO PARA MOSTRAR EN CONSOLA (ESTE ENVÍA EL PARAMETRO DEL NOMBRE AL CONSTRUCTOR).
+var mostrarConsola = new estudiante('María Benavides');
+mostrarConsola.mostrarNombre(); // IMPLEMENTAMOS EL MÉTODO.
