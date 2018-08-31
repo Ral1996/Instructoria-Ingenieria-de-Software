@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Patrón Builder</title>  <!-- Titulo que aparece en la pestaña superior del navegador -->
+        <meta charset="UTF-8">           <!-- Para que la página soporte tildes - español latino -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Responsive -->
+        <!--  Incluimos los archivos bootstrap.css a nuestro método observador -->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <style>
+            .jumbotron
+            {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container"> <!-- Contenedor del formulario -->
+            <div class="jumbotron">
+                <h1>Patrón Builder</h1>
+                <p><strong>Instrucciones: </strong>Pocisione en cada uno de los botones para poder observar,
+                                                   el automovil que más le paresca y ver su descripción.</p>
+                <p><strong>Desarrollador: </strong>Raúl Mauricio Portillo Muñoz. <strong>Carnet: </strong>PM13004. <strong>Derechos reservados, By RED - PortillO's.</strong></p>
+            </div>
+            <div class="contenido_autos">
+                <div class="row">
+                    <div class="col-md-8">
+                        <center>
+                        <button class="btn btn-success" onclick="runHilux(); return false;">Toyota Hilux SR5 - 2017</button>
+                        <button class="btn btn-warning" onclick="runHiace(); return false;">Toyota HIACE Silver - 2017</button>
+                        <button class="btn btn-danger"  onclick="runCorolla(); return false;">Toyota Corolla - 2017</button>
+                        </center><br>
+                        <div class="alert alert-info">
+                            <h3><strong>!Info: </strong>Descripción carros en promoción.</h3>
+                            <p id="marca"></p>
+                            <p id="modelo"></p>
+                            <p id="motor"></p>
+                            <p id="precio"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="imgCars">
+                        <!-- <img src="img/logo.jpg" alt="Logo..." class="img-fluid" id="imgCars"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/patron.js"></script>
+        <script type="text/javascript">
+            img = document.getElementById("imgCars");
+            img.innerHTML = '<img src="img/logo.jpg" height="300px" width="350px" />';
+        </script>
+    </body>
+</html>
