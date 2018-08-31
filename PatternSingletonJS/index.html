@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patrón Singleton</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/alertify.min.css">
+    <link rel="stylesheet" href="css/alertify.css">
+    <style>
+    .jumbotron{
+        margin-top: 10px;
+    }
+    .text_2P .input_2p{
+        margin-top: 10px;
+    }
+    .img_patron{
+        margin-left: 10%;
+    }
+    .page_footer{
+        color: blue;
+        background-color:lightgray;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="jumbotron">
+                <strong>
+                    <p class="text-center">UNIVERSIDAD DE EL SALVADOR</p>
+                    <p class="text-center">FACULTAD MULTIDISCIPLINARIA ORIENTAL</p>
+                    <p class="text-center">DEPARTAMENTO DE INGENIERÍA Y ARQUITECTURA</p><br>
+                </strong>
+                <p class="text-center"><strong>MATERIA: </strong> INGENIERÍA DE SOFTWARE. <strong>DOCENTE: </strong>ING.MILAGRO ALICIA DE REYES</p>
+                <p class="text-center"><strong>INSTRUCTOR: </strong>BACH. RAÚL MAURICIO PORTILLO MUÑOZ.</p>
+            </div>
+            <div class="contenedor_central row">
+                <div class="col-md-8">
+                    <p class="text-justify">
+                            El patrón Singleton limita el número de instancias de un objeto en particular a solo uno. 
+                            Esta única instancia se llama singleton.Los singletons son útiles en situaciones donde las
+                            acciones de todo el sistema deben coordinarse desde un solo lugar central. Un ejemplo es un
+                            grupo de conexiones de base de datos. El grupo administra la creación, destrucción y duración
+                            de todas las conexiones de bases de datos para toda la aplicación, asegurando que no se pierdan
+                            las conexiones.
+                            
+                            Los Singleton reducen la necesidad de variables globales, lo que es particularmente importante 
+                            en JavaScript porque limita la contaminación del espacio de nombres y el riesgo asociado de 
+                            colisiones de nombres. 
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img_patron" src="img/javascript-singleton.jpg" alt="Patrón Singleton">
+                    <button class="btn btn-success" onclick="run(); return false">Probar-Singleton</button>
+                    <a class="btn btn-dark" href="https://github.com/Ral1996/Instructoria-Ingenieria-de-Software">GitHub</a>
+                    <a class="btn btn-danger" href="https://www.dofactory.com/javascript/singleton-design-pattern">doFactory</a>
+                </div>
+                <div class="col-md-12 text_2P">
+                    <p class="text-center"><strong>PROBANDO PATRÓN SINGLETON - COMPRA Y VENTA DE DULCES.</strong></p>
+                </div>
+                <div class="col-md-12 input_2p">
+                    <label class="">Inserte cantidad a comprar: </label>
+                    <input class="" type="number" name="caja_compra" id="txt_compra1">
+                    <label class="">Inserte cantidad a vender: </label>
+                    <input class="" type="number" name="caja_venta" id="txt_venta1">
+                    <button class="btn btn-danger col-md-2" name="boton_compra" id="btn_compra1">Comprar</button>
+                    <button class="btn btn-info col-md-1" name="boton_vender" id="btn_vender1">Vender</button>
+                </div>
+            </div>
+            <footer class="page_footer"> By Raul_Soft</footer>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="Singleton.js"></script>
+    <script type="text/javascript" src="Singleton2.js"></script>
+    <script type="text/javascript" src="js/alertify.js"></script>
+    <script type="text/javascript" src="js/alertify.min.js"></script>
+</body>
+</html>
